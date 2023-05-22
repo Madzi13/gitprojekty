@@ -10,8 +10,10 @@
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "test": "npm run test:html",
     "test:html": "html-validate *.html",
-    "build": "npm-run-all build-dev:* test",
-    "build-dev": "npm-run-all build-dev:sass",
+    "build": "npm-run-all build:* test",
+    "build:sass": "sass --style=compressed --no-source-map sass:css",
+    "build:autoprefixer": "postcss css/*.css --use autoprefixer -d css",
+    "build-dev": "npm-run-all build-dev:sass build:autoprefixer",
     "build-dev:sass": "sass --style=expanded --source-map sass:css",
     "watch": "npm-run-all build build-dev -p watch:*",
     "watch:browsersync": "browser-sync start --server --files \"css/*.css\" \"*.html\"",
@@ -21,9 +23,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.2.4",
     "browser-sync": "^2.29.3",
     "mkdirp": "^3.0.1",
-    "onchange": "^7.1.0"
+    "onchange": "^7.1.0",
+    "postcss-cli": "^8.3.1"
   },
   "dependencies": {
     "html-validate": "^7.17.0",
