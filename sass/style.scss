@@ -1,53 +1,66 @@
-* {
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-h1 {
-  font-family: 'Roboto Condensed', sans-serif;
-  color:#F7F7F7;
-  font-size: 80px;
-  padding-top: 20px;
-  padding-bottom: 5px;
-  margin: 100px;
-  text-align: center;
-}
-h2 {
- font-family: 'Roboto Condensed', sans-serif;
- color:#F7F7F7;
-  font-size: 25px;
-  padding: 14px;
-  margin: 0;
-  text-align: center;
-}
+.splash {
+    max-height: 1140px;
+    position: relative;
+    background-position: center center;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    margin: 0px auto;
+  }
 
-.kk {
-  font-size: 45px;
-  font-family: 'Roboto Condensed', sans-serif;;
-  color: black;
-  margin: 50px 0 10px 0;
-  text-align: center;
-}
+  .splash .overlay {
+    width: 50%;
+    height: 50%;
+  }
+  .splash-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-.layer {
-background:  #138D75;   
-height: 100vh;
-padding: 5px;
-text-align: center;
-font-size: 45px;
-margin: 10px 0 10px 0;
-}   
+  h1 {
+    font-family: 'Montserrat', sans-serif;  
+    color:#f8f5f5;
+    font-size: 50px;
+    text-align: center;
+      margin-bottom: 35px;
+      margin-top: 35px;
 
-button[type="submit"] {
-  height: 60px;
-  width: 400px;
-  background: #fefffe;
-  color: rgb(255, 98, 7);
-  border: none;
-  cursor: pointer;
-  font-size: 60px;
-  line-height: 60px;
-  font-family: 'Roboto Condensed', sans-serif;
-  box-shadow: 0px 0px 10px #131313;
+      
+  
+  }
+  h2 {
+    font-family: 'Montserrat', sans-serif;  
+   color:#faf5f5;
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .log {
+    padding-left: 50px;
+  }
+  
+.btn {
   display: block;
-  margin: 50px auto;
+  background-color: rgb(250, 212, 41);
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  min-width: 350px;
+  height: 60px;
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;   
+  color: rgb(255, 255, 255);
+  margin: 0px auto;
 }
