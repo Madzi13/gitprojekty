@@ -3,40 +3,57 @@
 *::after {
   margin: 0;
   padding: 0;
-
   box-sizing: border-box;
 }
 
 .splash {
-    max-height: 1140px;
-    position: relative;
-    background-position: center center;
-    background-size: 100% auto;
-    background-attachment: fixed;
-    margin: 0px auto;
-  }
+  max-height: 1140px;
+  position: relative;
+  background-position: center center;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  margin: 0px auto;
+}
 
-  .splash .overlay {
-    width: 50%;
-    height: 50%;
-  }
-  .splash-inner {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 50px;
-  }
+.splash .overlay {
+  width: 50%;
+  height: 50%;
+}
 
-  h1 {
-    font-family: 'Montserrat', sans-serif;  
-    color:#f8f5f5;
-    font-size: 90px;
-    text-align: center;
-    margin-bottom: 60px;
-    margin-top: 55px;
-  }
+.splash-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
+}
+
+.logo {
+  position: absolute;
+  left: 316px;
+  top: 50px;
+}
+
+.navigation {
+  position: absolute;
+  padding: 12px;
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;  
+  font-size: 20px;
+  text-align: right; display: inline;
+  color: #ffffff;
+  text-decoration: none; 
+ }
+  
+h1 {
+  font-family: 'Montserrat', sans-serif;  
+  color:#f8f5f5;
+  font-size: 90px;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 55px;
+}
 
 .btn {
   display: block;
@@ -51,6 +68,7 @@
   color: rgb(255, 255, 255);
   margin: 0px auto;
 }
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -58,22 +76,34 @@
 }
 
 .services h2 {
-  padding-top: 80px;
+  padding-top: 60px;
   font-size: 53px; 
   color: #333333;
   font-family: 'Montserrat', sans-serif;   
   text-align: center;
-  margin: 5px 5px 5px 5px;
+
 }
+
 h3 {
   font-family: 'Montserrat', sans-serif;   
   font-size: 18px; 
   text-align: center; 
-
 }
+
 .img_2 {
-  margin: 20px 0 20px 0;
- text-align: center;
+  margin: 5px 0 40px 0;
+  text-align: center;
+}
+
+.image_1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  flex: 1;
+  flex-wrap: nowrap;
+  margin-bottom: 48px;
 }
 
 .image_1 .des-1 {
@@ -81,32 +111,31 @@ h3 {
   font-size: 16px;
   text-align: center; 
 }
-  .container {
-    max-width: 1140px;
-    margin: 0px auto;
-    padding: 0 20px;
-  }
+
+.container {
+  max-width: 1140px;
+  margin: 0px auto;
+  padding: 0 20px;
+}
 
 .box-wrapper {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
- }
+  margin-top: 24px
+}
 
- .icon {
-  @extend .box-wrapper;
+.icon {
+@extend .box-wrapper;
   flex-wrap: nowrap;
   flex: 0 0 33%;
   gap: 3rem;
   min-height: 300px;
   margin: 48px 0;
-
 }
 
 .portfolio {
-background: rgb(247, 247, 247);
-margin: 40px 0 10px 0;
-
+  background: rgb(247, 247, 247);
 }
 
 .container {
@@ -114,19 +143,27 @@ margin: 40px 0 10px 0;
   margin: 0px auto;
   padding: 0 20px;
 }
+
 .flex-wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .project {
-  @extend .flex-wrapper;
+@extend .flex-wrapper;
   flex-wrap: nowrap;
   flex: 0 0 33%;
   gap: 3rem;
   min-height: 300px;
-  margin: 48px 0;
-
+  margin: 24px 0;
 }
 
-
+footer {
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;  
+  color: rgb(29, 29, 29);
+  font-size: 14px;
+  height: 50px;
+  padding: 12px;
+}
