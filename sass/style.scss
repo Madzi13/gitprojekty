@@ -13,7 +13,6 @@
   background-size: 100% auto;
   background-attachment: fixed;
   margin: 0px auto;
-
 }
 
 .splash .overlay {
@@ -100,7 +99,6 @@ h1 {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 24px;
-
 }
 
 .services h2 {
@@ -119,7 +117,7 @@ h1 {
 h3 {
   font-family: 'Montserrat', sans-serif;   
   font-size: 18px; 
-  text-align: center; 
+  text-align: center;
   margin-top: 25px;
 
   @media (max-width: 767px) {
@@ -144,7 +142,7 @@ h3 {
 
   @media (max-width:767px) {
     flex-direction: column;
-     }
+  }
 
 }
 
@@ -172,7 +170,7 @@ h3 {
 
   @media (max-width:767px) {
     flex-direction: column;
-     }
+  }
 }
 
 .portfolio {
@@ -193,11 +191,11 @@ h3 {
 
   @media (max-width:767px) {
     flex-direction: column;
-     }
+  }
 }
 
 .project {
-@extend .flex-wrapper;
+  @extend .flex-wrapper;
   flex-wrap: nowrap;
   flex: 0 0 33%;
   gap: 3rem;
@@ -206,13 +204,13 @@ h3 {
   @media (max-width:767px) {
     flex-direction: column;
     text-align: center;  
-     }
+  }
 }
 
 .image {
   margin: 10px 0 20px 0;
-
 }
+
 h4 {
   font-family: 'Montserrat', sans-serif;   
   font-size: 16px; 
@@ -237,11 +235,11 @@ h4 {
     min-height: 300px;
     margin: 10px 0 80px 0;
   
-    @media (max-width:767px) {
+  @media (max-width:767px) {
       flex-direction: column;
-text-align: center;  
-       }
+      text-align: center;  
   }
+}
 
 
 footer p {
@@ -255,7 +253,6 @@ footer p {
   @media (max-width: 767px) {
     font-size: 12px;
   }
-
 }
 
 .icon {
